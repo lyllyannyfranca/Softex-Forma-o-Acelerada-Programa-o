@@ -1,0 +1,48 @@
+Algoritmo "cadastro"
+
+Var
+nome: caractere
+endereco: caractere
+cidade: caractere
+cpf: real
+rg: inteiro
+idade: inteiro
+nomePai: caractere
+nomeMae: caractere
+peso: real
+rendaBruta: real
+
+Inicio
+escreva("Informe seu nome: ")
+leia(nome)
+escreva("Informe seu endereço (Ex: Rua Papa pop, nº 10, Ouro Preto): ")
+leia(endereco)
+escreva("Informe sua cidade: ")
+leia(cidade)
+escreva("Informe seu CPF: ")
+leia(cpf)
+escreva("Informe seu RG: ")
+leia(rg)
+escreva("Informe sua idade: ")
+leia(idade)
+escreva("Informe o nome de seu pai: ")
+leia(nomePai)
+escreva("Informe o nome de sua mãe: ")
+leia(nomeMae)
+escreva("Informe o seu peso: ")
+leia(peso)
+escreva("Informe sua renda bruta: ")
+leia(rendaBruta)
+
+escreva("Nome: ", nome, ", ")
+escreva("Endereço: ", endereco, ", ")
+escreva("Cidade: ", cidade, ", ")
+escreva("CPF: ", cpf, ", ")
+escreva("RG: ", rg, ", ")
+escreva("Idade: ", idade, ", ")
+escreva("Nome do pai: ", nomePai, ", ")
+escreva("Nome da mãe: ", nomeMae, ", ")
+escreva("Peso: ", peso, ", ")
+escreva("Renda bruta: ", rendaBruta, ".")
+
+Fimalgoritmo

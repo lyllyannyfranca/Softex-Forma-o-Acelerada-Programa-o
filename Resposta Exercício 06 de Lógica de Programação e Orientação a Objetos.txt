@@ -1,0 +1,189 @@
+Algoritmo "Vestibular"
+Var
+   notasAlunosA: vetor[1..25] de real
+   nomesAlunosA: vetor[1..25] de caractere
+   notasAlunosB: vetor[1..25] de real
+   nomesAlunosB: vetor[1..25] de caractere
+   notasAlunosC: vetor[1..25] de real
+   nomesAlunosC: vetor[1..25] de caractere
+   notasAlunosD: vetor[1..25] de real
+   nomesAlunosD: vetor[1..25] de caractere
+   maiorNota: vetor[1..4] de real
+   alunoMaiorNota: vetor[1..4] de caractere
+   trocou: logico
+   maiorNotaTodas: real
+   alunoMaiorNotaTodas: caractere
+   i: inteiro
+   contadorAprovados: vetor[1..4] de inteiro
+
+procedimento cadastroAlunos(turma: caractere; indice: inteiro)
+var
+   nota: real
+   nome: caractere
+inicio
+   escreva("Informe seu nome: ")
+   leia(nome)
+   escreva("Informe sua nota do vestibular: ")
+   leia(nota)
+   escolha turma
+   caso "A"
+      nomesAlunosA[indice] <- nome
+      notasAlunosA[indice] <- nota
+   caso "B"
+      nomesAlunosB[indice] <- nome
+      notasAlunosB[indice] <- nota
+   caso "C"
+      nomesAlunosC[indice] <- nome
+      notasAlunosC[indice] <- nota
+   caso "D"
+      nomesAlunosD[indice] <- nome
+      notasAlunosD[indice] <- nota
+   fimescolha
+fimprocedimento
+
+procedimento verificaAprovados(nota: real; indice: inteiro)
+inicio
+   se nota >= 7.0 entao
+      contadorAprovados[indice] <- contadorAprovados[indice] + 1
+   fimse
+fimprocedimento
+
+procedimento maiorNotaTurma(opcao: caractere; indice: inteiro)
+var
+   i: inteiro
+   maior: logico
+inicio
+   maior <- verdadeiro
+   escolha opcao
+   caso "A"
+      enquanto maior=verdadeiro faca
+         maior <- verdadeiro
+         para i de 1 ate 24 faca
+            se notasAlunosA[i] > notasAlunosA[i+1] entao
+               se notasAlunosA[i] > maiorNota[indice] entao
+                  maiorNota[indice] <- notasAlunosA[i]
+                  alunoMaiorNota[indice] <- nomesAlunosA[i]
+               fimse
+            fimse
+            maior <- falso
+         fimpara
+      fimenquanto
+   caso "B"
+      enquanto maior=verdadeiro faca
+         maior <- verdadeiro
+         para i de 1 ate 24 faca
+            se notasAlunosB[i] > notasAlunosB[i+1] entao
+               se notasAlunosB[i] > maiorNota[indice] entao
+                  maiorNota[indice] <- notasAlunosB[i]
+                  alunoMaiorNota[indice] <- nomesAlunosB[i]
+               fimse
+            fimse
+            maior <- falso
+         fimpara
+      fimenquanto
+   caso "C"
+      enquanto maior=verdadeiro faca
+         maior <- verdadeiro
+         para i de 1 ate 24 faca
+            se notasAlunosC[i] > notasAlunosC[i+1] entao
+               se notasAlunosC[i] > maiorNota[indice] entao
+                  maiorNota[indice] <- notasAlunosC[i]
+                  alunoMaiorNota[indice] <- nomesAlunosC[i]
+               fimse
+            fimse
+            maior <- falso
+         fimpara
+      fimenquanto
+   caso "D"
+      enquanto maior=verdadeiro faca
+         maior <- verdadeiro
+         para i de 1 ate 24 faca
+            se notasAlunosD[i] > notasAlunosD[i+1] entao
+               se notasAlunosD[i] > maiorNota[indice] entao
+                  maiorNota[indice] <- notasAlunosD[i]
+                  alunoMaiorNota[indice] <- nomesAlunosD[i]
+               fimse
+            fimse
+            maior <- falso
+         fimpara
+      fimenquanto
+   fimescolha
+
+fimprocedimento
+
+Inicio
+   escreval("Turma A")
+   para i de 1 ate 25 faca
+      cadastroAlunos("A", i)
+      verificaAprovados(notasAlunosA[i], 1)
+      maiorNotaTurma("A", 1)
+   fimpara
+
+   escreval()
+   escreval("Turma B")
+   para i de 1 ate 25 faca
+      cadastroAlunos("B", i)
+      verificaAprovados(notasAlunosB[i], 2)
+      maiorNotaTurma("B", 2)
+   fimpara
+
+   escreval()
+   escreval("Turma C")
+   para i de 1 ate 25 faca
+      cadastroAlunos("C", i)
+      verificaAprovados(notasAlunosC[i], 3)
+      maiorNotaTurma("C", 3)
+   fimpara
+
+   escreval()
+   escreval("Turma D")
+   para i de 1 ate 25 faca
+      cadastroAlunos("D", i)
+      verificaAprovados(notasAlunosD[i], 4)
+      maiorNotaTurma("D", 4)
+   fimpara
+
+   para i de 1 ate 4 faca
+      se i = 1 entao
+         escreval()
+         escreval("Turma A: ")
+      fimse
+
+      se i = 2 entao
+         escreval()
+         escreval("Turma B: ")
+      fimse
+
+      se i = 3 entao
+         escreval()
+         escreval("Turma C: ")
+      fimse
+
+      se i = 4 entao
+         escreval()
+         escreval("Turma D: ")
+      fimse
+
+      escreval(contadorAprovados[i], " alunos foram aprovados.")
+      escreval(alunoMaiorNota[i], " teve maior nota da turma: ", maiorNota[i])
+   fimpara
+
+   escreval()
+   trocou <- verdadeiro
+   para i de 1 ate 4 faca
+      enquanto trocou=verdadeiro faca
+         trocou <- verdadeiro
+         para i de 1 ate 3 faca
+            se maiorNota[i] > maiorNota[i+1] entao
+               se maiorNota[i] > maiorNotaTodas entao
+                  maiorNotaTodas <- maiorNota[i]
+                  alunoMaiorNotaTodas <- alunoMaiorNota[i]
+               fimse
+            fimse
+            trocou <- falso
+         fimpara
+      fimenquanto
+   fimpara
+   escreval(alunoMaiorNotaTodas, " teve a maior nota de toda escola: ", maiorNotaTodas)
+
+Fimalgoritmo

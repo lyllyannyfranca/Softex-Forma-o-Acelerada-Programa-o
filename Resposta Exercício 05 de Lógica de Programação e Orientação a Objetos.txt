@@ -1,0 +1,207 @@
+Algoritmo "JogoAdvinhacao"
+
+Var
+opcao: inteiro
+resposta: caractere
+
+Inicio
+escreval("===== Jogo da advinhação =====")
+escreval()
+escreval("Tema: Meios de transporte")
+escreval()
+escreval("1 - Trator")
+escreval("2 - Moto")
+escreval("3 - Bicicleta")
+escreval("4 - Trem")
+escreval("5 - Carro")
+escreval("6 - Caminhão")
+escreval("7 - Ônibus")
+escreval("8 - Paraquedas")
+escreval("9 - Balão")
+escreval("10 - Avião")
+escreval("11 - Helicóptero")
+escreval("12 - Submarino")
+escreval("13 - Barco")
+escreval("14 - Navio")
+escreval("15 - Lancha")
+escreva("Escolha uma das opções acima para começar: ")
+leia(opcao)
+
+escreval()
+
+escreva("É terrestre? ")
+leia(resposta)
+se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+   escreval()
+   escreva("Cabe apenas uma pessoa? ")
+   leia(resposta)
+   se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+      escreval()
+      escreva("É pesado? ")
+      leia(resposta)
+      se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+         escreval()
+         escreval("Então, o transporte escolhido foi o trator.")
+      senao
+         escreval()
+         escreva("Tem pedal? ")
+         leia(resposta)
+         se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+            escreval()
+            escreval("Então, o transporte escolhido foi a bicicleta.")
+         fimse
+      fimse
+   senao
+        escreval()
+        escreva("Usa capacete? ")
+        leia(resposta)
+        se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+           escreval()
+           escreval("Então, o transporte escolhido foi a moto.")
+        senao
+           escreval()
+           escreva("Tem passageiro? ")
+           leia(resposta)
+           se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+              escreval()
+              escreva("Usa trilho? ")
+              leia(resposta)
+              se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                 escreval()
+                 escreval("Então, o transporte escolhido foi o trem.")
+              senao
+                 escreval()
+                 escreva("Anda na pista? ")
+                 leia(resposta)
+                 se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                    escreval()
+                    escreva("É alto? ")
+                    leia(resposta)
+                    se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                       escreval()
+                       escreva("Usa carroceria? ")
+                       leia(resposta)
+                       se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                          escreval()
+                          escreval("Então, o transporte escolhido foi o caminhão.")
+                       senao
+                          escreval()
+                          escreva("Pode ter cobrador? ")
+                          leia(resposta)
+                          se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                             escreval()
+                             escreval("Então, o transporte escolhido foi o ônibus.")
+                          fimse
+                       fimse
+                    senao
+                         escreval()
+                         escreva("É veículo leve? ")
+                         leia(resposta)
+                         se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                            escreval()
+                            escreval("Então, o transporte escolhido foi o carro.")
+                         fimse
+                    fimse
+                 fimse
+              fimse
+           fimse
+        fimse
+   fimse
+senao
+   escreval()
+   escreva("É aéreo? ")
+   leia(resposta)
+   se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+      escreval()
+      escreva("Precisa pular? ")
+      leia(resposta)
+      se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+         escreval()
+         escreval("Então, o transporte escolhido foi o paraquedas.")
+      senao
+         escreval()
+         escreva("Viaja dentro? ")
+         leia(resposta)
+         se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+            escreval()
+            escreva("É devagar? ")
+            leia(resposta)
+            se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+               escreval()
+               escreval("Então, o transporte escolhido foi o balão.")
+            fimse
+         senao
+            escreval()
+            escreva("Tem piloto? ")
+            leia(resposta)
+            se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+               escreval()
+               escreva("Possui asas fixas? ")
+               leia(resposta)
+               se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                  escreval()
+                  escreva("Então, o transporte escolhido foi o avião.")
+               fimse
+            senao
+               escreval()
+               escreva("Faz vôo vertical? ")
+               leia(resposta)
+               se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                  escreval()
+                  escreval("Então, o transporte escolhido foi helicóptero.")
+               fimse
+            fimse
+         fimse
+      fimse
+   senao
+      escreval()
+      escreva("É aquático? ")
+      leia(resposta)
+      se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+         escreval()
+         escreva("É coberto d'água? ")
+         leia(resposta)
+         se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+            escreval()
+            escreval("Então, o transporte escolhido foi o submarino.")
+         fimse
+      senao
+         escreval()
+         escreva("Navega na água? ")
+         leia(resposta)
+         se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+            escreval()
+            escreva("Possui vela? ")
+            leia(resposta)
+            se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+               escreval()
+               escreval("Então, o transporte escolhido foi o barco.")
+            senao
+            fimse
+         senao
+            escreval()
+            escreva("Tem motor? ")
+            leia(resposta)
+            se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+               escreval()
+               escreva("É alto? ")
+               leia(resposta)
+               se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                  escreval()
+                  escreval("Então, o transporte escolhido foi o navio.")
+               fimse
+            senao
+               escreval()
+               escreva("Pode ser descoberto? ")
+               leia(resposta)
+               se (resposta="sim") ou (resposta="Sim") ou (resposta="SIM") entao
+                  escreval()
+                  escreval("Então, o transporte escolhido foi a lancha.")
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+Fimalgoritmo

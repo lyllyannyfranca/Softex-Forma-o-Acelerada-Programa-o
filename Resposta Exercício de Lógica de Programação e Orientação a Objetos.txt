@@ -1,0 +1,3 @@
+- Aristóteles fica em 1º lugar em Física pois não pode ser 1º lugar na primeira condição ("Aristóteles não ficou em primeiro em Química") e nem na última condição ("Platão acertou mais que Aristóteles em Matemática").
+- Platão fica em 2º lugar em Matemática pois a condição informa que ele acertou mais que Aristóteles, mas não garante que ele tenha acertado mais que Sócrates.
+- Sócrates fica em 3º lugar em Química pois levando em consideração que as condicionais anteriores já foram atendidas, sobra apenas o 3º lugar uma vez que Aristóteles não pode ser o 1º lugar e Platão já ficou em 2º lugar na condicional anterior.
