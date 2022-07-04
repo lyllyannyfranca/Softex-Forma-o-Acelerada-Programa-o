@@ -1,0 +1,82 @@
+'''Classes concretas '''
+class Book: '''Livro '''
+    def __init__(self, name, number_page, author):
+        self.name = name
+        self.number_page = number_page
+        self.author = author
+        self.is_open = False
+        self.page = 0
+    def open_book(self):
+        self.is_open = True
+    def close_book(self):
+        self.is_open = False
+    def flip_pages_to(self, value):
+        if value > self.number_page:
+            raise ValueError("Número de página inválida!\n")
+        self.page = value
+    def flip_pages(self):
+        if self.page != number_page:
+            self.page += self.page
+        else:
+            raise ValueError("Fim do livro!\n")
+
+class Bookmark: '''Marcador de livro '''
+    def __init__(self, book):
+        self.book = book
+        self.color = "white"
+        self.size = "medium"
+        self.is_marked = False
+    def mark_page(self): 
+        self.is_marked = True
+    def dismark_page(self):
+        self.is_marked = False
+    def change_color(self, color):
+        self.color = color
+    def change_size(self, size):
+        self.size = size
+        
+'''Classes abstratas '''        
+        
+class Music: ''' Música '''
+    def __init__(self):
+        self.tone = "E"
+        self.time = 90
+        self.is_playing = False
+    def play_music(self):
+        self.is_playing = True
+    def stop_music(self):
+        self.is_playing = False
+    def change_tone(self, value):
+        self.tone = value
+    def change_time(self, value):
+        self.time = value
+        
+class Force: '''A Força, do universo de Star Wars ''''
+    def __init__(self, midi_clorians):
+        self.side = ""
+        self.midi_clorians = midi_clorians
+        self.emotion = ""
+    def side(self, emotion): 
+        if (emotion == "compaixão" or emotion == "bondade" or emotion == "honra" or emotion == "altuísmo"):
+            self.size = "Luz"
+        elif (emotion == "raiva" or emotion == "medo" or emotion == "desespero" or emotion == "ódio"):
+            self.size = "Sombrio"
+    def control(self, years_trainig):
+        if midi_clorians == 27700 and years_trainig > 10: 
+            return "Muito alto"
+        else: 
+            if years_trainig < 2: 
+                return "Muito baixo"
+            elif years_trainig > 2 and years_trainig <= 5:
+                return "Baixo"
+            elif years_trainig > 5 and years_trainig <= 10:
+                return "Médio"
+            elif years_trainig > 10 and years_trainig <= 20:
+                return "Alto"
+            elif years_trainig > 20:
+                return "Muito alto"
+    def is_the_chosen_one(self):
+        if midi_clorians == 27700:
+            return "Você é o Escolhido e irá retornar o equilíbrio na Força!!"
+        else: 
+            return "Poderosa, a Força é em você!"
