@@ -1,0 +1,11 @@
+print('=== MANIPULAÇÃO DE STRINGS ===')
+print('Insira uma palavra: ')
+word = input()
+print(f'Palavra digitada: {word}')
+print(f'Convertido em maiúsculo: {word.upper()}')
+print(f'Convertido em minúsculo: {word.lower()}')
+print(f'Quantidade de caracteres na palavra digitada: {len(word)}')
+print(f'Substituindo a palavra')
+print('Informe uma palavra: ')
+print(f'Palavra substituída: {word.replace(word, input())}')
+
