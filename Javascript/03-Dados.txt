@@ -1,0 +1,15 @@
+Dados usados no cotidiano: 
+1. Número de telefone para realizar uma chamada
+   Tipo: String
+2. Nome de linhas de ônibus
+   Tipo: String
+3. Tábua de maré, em caso de dias muito chuvosos
+   Tipo: Number
+
+Dados usados na internet: 
+1. Quantidade de itens em um carrinho de compras
+   Tipo: Number
+2. Cartão de crédito digital para efetuar a compra de um produto
+   Tipo: String
+3. CEP para cálculo de frete
+   Tipo: String

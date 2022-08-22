@@ -1,0 +1,2 @@
+Escolhi o Visual Studio Code devido o editor de código-fonte ser open source, possuir acesso facilitado a várias extensões e ferramentas para verificação de boas práticas com o ESLint, o IntelliSense que ajuda a autocompletar o código-fonte, ajudando na produtividade e devido a vasta gama de atalhos que o editor possui.
+Para rodar o Javascript diretamente no console do editor foi necessário a instalação do Node.js. Já para execução do Visual Studio Code, o mesmo já estava instalado na máquina devido a utilização em outra linguagem de programação.
