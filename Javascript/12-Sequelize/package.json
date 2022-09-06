@@ -1,0 +1,16 @@
+{
+  "name": "12-sequelize",
+  "version": "1.0.0",
+  "description": "Exercicio sobre o uso do ORM Sequelize",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lyllyanny França",
+  "license": "ISC",
+  "dependencies": {
+    "mariadb": "^3.0.1",
+    "sequelize": "^6.21.4"
+  }
+}
